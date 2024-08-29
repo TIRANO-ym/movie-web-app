@@ -8,8 +8,10 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     word-break: break-all;
+    padding-left: 10%;
+    padding-right: 10%;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     z-index: 100;
     transition: transform .2s; /* Animation */
   }
@@ -35,7 +37,7 @@
       align-content: space-around;
       transition: transform .2s; /* Animation */
       .score_box {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color: rgb(255, 238, 0);
         .score_text {
           color: white;
@@ -51,9 +53,10 @@
         color: rgb(235, 235, 235);
         border: solid 1px gray;
         padding: 3%;
-        min-width: 30%;
+        min-width: 40%;
         margin-top: 7%;
         cursor: pointer;
+        font-size: 1rem;
       }
     }
   }
@@ -73,6 +76,8 @@
     display: flex;
     justify-content: center;
     margin-top: 3px;
+    padding-left: 10%;
+    padding-right: 10%;
     flex-wrap: wrap;
     transition: transform .2s; /* Animation */
     .tag {
@@ -84,7 +89,7 @@
       padding-right: 3px;
       margin-left: 8px;
       margin-bottom: 5px;
-      font-size: 0.8rem;
+      font-size: 1rem;
       /* font-weight: bold; */
     }
   }
