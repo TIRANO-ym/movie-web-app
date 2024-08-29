@@ -1,0 +1,116 @@
+.movie_card {
+  padding: 10px;
+  width: 18%;
+  text-align: center;
+  margin-top: 1%;
+  .movie_title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    font-weight: bold;
+    font-size: 1.1rem;
+    z-index: 100;
+    transition: transform .2s; /* Animation */
+  }
+
+  .image_box {
+    position: relative;
+    height: fit-content;
+    z-index: 0;
+    
+    .image {
+      box-shadow: 5px 5px 5px #000;
+      transition: transform .2s; /* Animation */
+    }
+    .image_cover {
+      position: absolute;
+      top: -328px;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 346px;
+      z-index: 100;
+      background-color: rgba(0, 0, 0, 0.425);
+      align-content: space-around;
+      transition: transform .2s; /* Animation */
+      .score_box {
+        font-size: 1.4rem;
+        color: rgb(255, 238, 0);
+        .score_text {
+          color: white;
+          position: relative;
+          top: -2px;
+          font-weight: bold;
+        }
+      }
+      .detail_button {
+        border: 0;
+        border-radius: 5px;
+        background-color: rgb(37, 37, 37);
+        color: rgb(235, 235, 235);
+        border: solid 1px gray;
+        padding: 3%;
+        min-width: 30%;
+        margin-top: 7%;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .image_box:hover {
+    border: solid 3px blue;
+    .image {
+      transform: scale(1.1);
+      box-shadow: 5px 5px 30px #000;
+    }
+    .image_cover {
+      transform: scale(1.1);
+    }
+  }
+
+  .tag_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    flex-wrap: wrap;
+    transition: transform .2s; /* Animation */
+    .tag {
+      /* background-color: rgb(39, 89, 129); */
+      background-color: rgba(0, 0, 0, 0);
+      border: solid 2px gray;
+      border-radius: 5px;
+      padding-left: 3px;
+      padding-right: 3px;
+      margin-left: 8px;
+      margin-bottom: 5px;
+      font-size: 0.8rem;
+      /* font-weight: bold; */
+    }
+  }
+
+  .moveDown {
+    transform: translateY(20px);
+  }
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
