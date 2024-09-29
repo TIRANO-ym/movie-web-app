@@ -34,7 +34,7 @@ function Movie({ id, coverImg, title, genres, rating }) {
       </span>
       <div className={`movie_title${showCover ? ' moveDown' : ''}`}>{title}</div>
       <div className={`tag_box${showCover ? ' moveDown' : ''}`}>
-        { genres.map((g, gi) => <span key={gi} className="tag">{g}</span>) }
+        { genres?.map((g, gi) => <span key={gi} className="tag">{g}</span>) }
       </div>
     </div>
   );
